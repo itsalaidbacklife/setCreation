@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<meta charset='UTF-8'>
+	<title>Tutles!</title>
+	<link rel="stylesheet" type="text/css" href="./css/angular-toastr.css">
+	<link rel='stylesheet' href='./css/style.css'/>
+	<script type="text/javascript" src='js/angular.js'></script>
+    <script type="text/javascript" src='js/angular-toastr.tpls.js'></script>	
+	<script type="text/javascript" src='js/app.js'></script>
+</head>
+<body>
+	<div ng-app='homepage'>
+	<div ng-controller='setController as set' class="wrapper">
+		<h1>Things that Exist</h1>
+		<div id="universeWrapper">	
+			<div id='universe'>
+				<div id='setContainer' class="wrapper">
+					<div ng-repeat='thing in set.universe track by $index' ng-click='set.toggle(thing)' ng-class='thing.class' ng-mouseover='set.toast(thing)'>
+					{{thing.name}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="formWrapper">	
+			<form ng-submit='set.makeSet()'>
+				<input id='textBox' type='text' ng-model='set.formName'>
+				<input id='submitButton' type='submit'>
+			</form>
+		</div>
+	</div>
+	</div>
+</body>

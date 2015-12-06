@@ -1,0 +1,69 @@
+/*body .wrapper *{
+	outline-style: dashed;
+	outline-width: 2px;
+	outline-color: black;
+}
+*/
+
+#universe {
+	height: 20%;
+	/*background-color: #99BAC4;*/
+}
+
+#universeWrapper{
+	
+	position:fixed;
+	min-height: 75%;
+	min-width: 100%;
+	background-color: #FCCDA7;
+}
+#setContainer{
+	background-color: #FCDFA7;
+}
+#setContainer:hover{
+	background-color: #649797;
+	width:98%;
+
+}
+#formWrapper{
+
+	position:fixed;
+	bottom:-10px;
+	min-width: 100%;
+	min-height:17%;
+	background-color: #7685A9;
+}
+form{
+	position: fixed;
+	bottom:-1px;
+	width:100%;
+}
+#submitButton{
+	width:20%;
+	position:relative;
+	right:-100px;
+}
+
+#textBox {
+	min-width:70%;
+}
+
+h1:hover {
+	color: red;
+	background-color: blue;
+}
+.set:hover{
+	background-color: #226565;
+}
+
+.selected{
+	position:relative;
+	right:-33%;
+	background-color: #D4B16B;
+	width:8%;
+	
+}
+.set{
+	width:8%;
+
+}
